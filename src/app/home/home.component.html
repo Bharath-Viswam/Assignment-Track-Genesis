@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Product</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">About</a>
+        </li>
+ 
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">ContactUs</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<div class="container">  
+  <div class="row">
+  <!-- col-sm-12 col-xs-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 -->
+<div class="col">  <div class="card" style="width: 18rem;" >
+  <img [src]="products[0].image" class="card-img-top" alt="test" [style.width.px]='200' [style.height.px]="220">
+  <div class="card-body">
+    <h5 class="card-title">{{products[0].title}}</h5>
+    <p class="card-text">{{products[0].description}}</p>
+    <a href="#" class="btn btn-primary">{{products[0].rating.rate}}★</a>
+    <span></span>
+    <a href="#" class="btn btn-success" style="margin-left: 20px;">{{products[0].price}}$</a>
+  </div>
+</div></div>
+  
+    
+  
+ 
+
+
+  <div class="col">
+  
+    <div id="carouselExample" class="carousel slide coursl">
+      <h3 class="text-center">Other Products</h3>
+      <div class="carousel-inner" >
+        <div class="carousel-item active" >
+          <img [src]="products[0].image" class="d-block w-100" alt="..." [style.width.px]='500' [style.height.px]="220">
+        </div>
+        <div class="carousel-item" *ngFor="let product of products.slice(1,-1)">
+          <img [src]="product.image" class="d-block w-100" alt="..." [style.width.px]='500' [style.height.px]="220">
+        </div> 
+      
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="row">
+<div class="col"></div>
+  <div class="col"> <h1>Follow us</h1>
+    <div class="Social-media">
+  
+  <a href="#"><font color="#007cc4"><i class="fab fa-facebook"></i></font></a>
+  <a href="#"><font color="#007cc4"><i class="fab fa-linkedin"></i></font></a>
+  <a href="#"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+  <a href="#"><font color="#007cc4"><i class="fab fa-youtube"></i></font></a>
+    </div></div>
+  <div class="col"> </div>
+
+</div>
+</div>
+
+
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-bottom">
+  
+    <div class="container  justify-content-center" >
+      <a class="navbar-brand " >©Copyright 2023 All rights reserved  </a>
+  
+    </div>
+  
+  
+  </nav>
