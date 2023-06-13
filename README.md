@@ -3,8 +3,10 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
 ##Prerequisites
+
 First you have to install packages , for that run npm install after you have downloaded the project and opened the project in vs code then for running the project locally
-run 'ng serve --o' this wil open the project in a new window in the browser
+run 'ng serve --o' this wil open the project in a new window in the browser, if it is not opening, then in the terminal you can see a address for the local server,
+go to that, by default it is 'http://localhost:4200/'. but if it is already used, then you can see the address in the terminal window where you have run the command.
 
 ## Development server
 
