@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
+##Prerequisites
+First you have to install packages , for that run npm install after you have downloaded the project and opened the project in vs code then for running the project locally
+run 'ng serve --o' this wil open the project in a new window in the browser
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
